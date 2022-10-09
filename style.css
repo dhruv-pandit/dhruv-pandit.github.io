@@ -305,7 +305,7 @@ h6 {
 }
 
 .project1::after {
-      content: "timeless flow.";
+      content: "data analyst.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -323,7 +323,7 @@ h6 {
 }
 
 .project2::after {
-      content: "foretime.";
+      content: "web designer.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -341,10 +341,10 @@ h6 {
 }
 
 .project3::after {
-      content: "never again.";
+      content: "content creator.";
       font-family: "Roboto Mono";
       font-size: 36px;
-      position: relative;
+      position: absolute;
       color: #fff;
       display: block;
       top: 80%;
@@ -353,23 +353,7 @@ h6 {
       bottom: 0;
 }
 
-.project4 {
-      background: url(https://images.unsplash.com/photo-1435685813800-51ba4ceb9c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1785&q=80) no-repeat 50% 50%;
-      background-size: cover;
-}
 
-.project4::after {
-      content: "departure.";
-      font-family: "Roboto Mono";
-      font-size: 36px;
-      position: relative;
-      color: #fff;
-      display: block;
-      top: 10%;
-      left: 90%;
-      right: 0;
-      bottom: 0;
-}
 
 @media(max-width: 768px) {
       .project {
@@ -493,10 +477,16 @@ h6 {
       height: 500px;
       margin-top: 120px;
 }
+.about-image {
+     background-position: center left;
+     resize: none;
+     max-width: 100%;
+     height: auto;
+     border-radius: 1%;
 
-.image {
-      background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
+
 }
+
 
 /*--------------- contact form --------------- */
 
