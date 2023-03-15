@@ -1,0 +1,255 @@
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: Roboto;
+font-size: 25px;
+}
+
+#menu {
+display: flex;
+flex-direction: row-reverse;
+list-style: none;
+
+}
+
+#menu li {
+padding: 18px;
+}
+#menu li a {
+text-decoration: none;
+color: rgb(224, 224, 224);
+transition: color .3s ease-in-out;
+
+
+}
+#menu a:hover {
+color: #8d8d8d;
+}
+
+
+
+#brand {
+order: -1;
+}
+
+#brand a {
+text-decoration: none;
+color: rgb(241, 241, 241);
+font-family: Futura;
+transition: color .3s ease-in-out;
+font-size: 28px;
+margin-left: 10px;
+}
+#brand a:hover {
+color: white;
+}
+.row1, .row2, .row3 {
+display: flex; /* makes the div a row element */
+}
+
+/* specify height and width of the row */
+.row1, .row2, .row3 {
+width: 100%;
+align-items: center;
+max-height: 45%;
+margin-top: 10%;
+margin-bottom: 10%;
+overflow: auto;
+}
+
+/* split the row into two columns */
+.col-1,
+.col-2 {
+flex-basis: 50%; /* each column takes up 50% of the row */
+}
+.col-1 img {
+max-width: 100%;
+max-height: 100%;
+animation-name: fade-in-up;
+animation-duration: 1s;
+
+}
+.col-2 p {
+font-size: 25px;
+font-family: Roboto;
+color: #e8e4e4;
+position: relative;
+left: -15%;
+justify-content: center;
+animation-name: fade-in-up;
+animation-duration: 1s;
+
+
+}
+.col-2 img {
+max-width: 100%;
+max-height: 100%; 
+animation-name: fade-in-up;
+animation-duration: 1s;
+}
+.col-1 p {
+font-size: 25px;
+font-family: Roboto;
+color: #e8e4e4;
+position: relative;
+right: -85%;
+justify-content: center;
+animation-name: fade-in-up;
+animation-duration: 1s;
+
+
+}
+
+
+.name {
+    font-size: 40px;
+    font-family: 'Futura';
+    font-weight: 400;
+    color: rgb(240, 237, 237);
+    text-align: center;
+
+}
+.role {
+    font-size: 25px;
+    font-family: 'Futura';
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+.title {
+    text-align: center;
+}
+
+body {
+    background-color: #292929; /* Change this to the desired background color */
+}
+footer {
+    font-family: 'Roboto';
+    text-align: right;
+}
+
+.footer-line {
+    border-color: grey;
+}
+
+.footer-text p {
+    margin: 0;
+}
+
+.interested {
+    color: grey;
+}
+.contactme {
+    color: rgb(231, 231, 231);
+}
+
+.github-link {
+    text-decoration: none;
+    color: #f1a4ff;
+    transition: opacity .3s ease-in-out;
+    padding-right: 10px;
+}
+.github-link:hover {
+    opacity: 80%;
+
+}
+
+.linkedin-link {
+    text-decoration: none;
+    color: #0077B5;
+}
+.linkedin-link:hover {
+    opacity: 80%;
+    transition: opacity .3s ease-in-out;
+
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #8d8d8d;
+    opacity: 80%;
+}
+.contact-link:hover {
+    opacity: 60%;
+    transition: opacity .3s ease-in-out;
+
+}
+
+
+.designer-text {
+    text-align: right;
+}
+
+.designer-text p {
+    font-size: 10px;
+    font-family: 'Futura';
+    color: white;
+    opacity: 80%;
+}
+.designer-text p a {
+    font-size: 10px;
+    font-family: 'Futura';
+    color: white;
+    opacity: 80%;
+    text-decoration: none;
+}
+#footer-links {
+display: flex;
+flex-direction: row; /* change flex direction to row */
+justify-content: flex-end; /* and align items to the right */
+
+}
+.title p.role {
+display: inline-block;
+overflow: hidden; 
+animation: typing 2.5s steps(30, end), blink-caret .5s step-end infinite;
+white-space: nowrap;
+font-size: 24px;
+font-weight: 300;
+font-family: Roboto;
+}
+
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: black }
+}
+.title {
+opacity: 0;
+animation: fade-in-up 1.5s ease-out forwards;
+}
+.footer-line {
+    width: 100%; /* adjust the value to change the width */
+    height: .1px;
+    background-color: #ddd;
+    margin: 20px auto;
+    }
+@keyframes fade-in-up {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+
+}
+/* Header styling */
+.row1 ~.row1 ~ .row3 {
+    animation-delay: 1s;
+}
+
+.content h1{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color:#b6e6ff ;
+    animation: fade-in-up 1.5s ease-out forwards;
+    text-align: center;
+
+}

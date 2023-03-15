@@ -1,221 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="personal" content="dhruv">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-      <title>contact</title>
-
-      <!-- stylesheet -->
-      <link rel="stylesheet" href="style.css">
-
-      <!-- bootstrap cdns -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-      <!-- google fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-      <!-- for on scroll animations -->
-      <link rel="stylesheet" href="animate.css">
-      <script src="wow.min.js"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-      <div class="wrapper">
+    <div class = 'background'>
+        <nav>
+            <span id="brand">
+                <a href="index.html">dhruv</a>
+            </span>
+            <ul id="menu">
+                <li><a href="index.html">home<span>.</span></a></li>
+                <li><a href="work.html">projects<span>.</span></a></li>
+                <li><a href="about.html">about me<span>.</span></a></li>
+                <li><a href="contact.html">contact<span>.</span></a></li>
+            </ul>
 
-            <!--------------- navbar starts here --------------->
-            <nav>
-                  <span id="brand">
-                        <a href="index.html">dhruv</a>
-                  </span>
+        </nav>
+        <div class="content">
+            <h1>
+                contact
+            </h1>
+        </div>
 
-                  <ul id="menu">
-                        <li><a href="index.html">home<span>.</span></a></li>
-                        <li><a href="work.html">projects<span>.</span></a></li>
-                        <li><a href="about.html">about me<span>.</span></a></li>
-                        <li><a href="contact.html">contact<span>.</span></a></li>
-                  </ul>
-
-                  <div id="toggle">
-                        <div class="span">menu</div>
-                  </div>
-
-            </nav>
-
-            <div id="resize">
-                  <div class="close-btn">close</div>
-
-                  <ul id="menu">
-                        <li><a href="index.html">home<span>.</span></a></li>
-                        <li><a href="work.html">projects<span>.</span></a></li>
-                        <li><a href="about.html">about me<span>.</span></a></li>
-                        <li><a href="contact.html">contact<span>.</span></a></li>
-                  </ul>
+        <footer>
+            <div class="footer-text">
+                <p class="interested">Interested in knowing more? Contact me.</p>
+                <hr class="footer-line">
+                <p class="contactme">interact.</p>
+                <div id = 'footer-links'>
+                    <p><a href="https://github.com/dhruv-pandit" class="github-link">.gh</a></p>
+                    <p><a href="https://www.linkedin.com/in/dhruv-akshay-pandit/" class="linkedin-link">.ln</a></p>
+                </div>
+                <p class="contactme">connect.</p>
+                <div id = 'footer-links'>
+                    <p><a href="mailto:dhruv.pandit2001@outlook.com" class="contact-link">dhruv.pandit2001@outlook.com</a></p>
+                </div>
             </div>
-
-            <!--------------- navbar ends here --------------->
-
-            <div class="whitespace"></div>
-
-            <!--------------- hero section starts here say hello 👋 --------------->
-            <div class="container">
-                  <div class="hero-content">
-                        <br><br>
-
-                        <div class="row">
-                              <div class="col-lg-8">
-
-                                    <h3 class="wow fadeInUp" data-wow-delay="1s">say hello 👋</h3><br>
-            
-                              </div>
-                        </div>
-                  </div>
+            <div class="designer-text">
+                <p>designed inspired from <a href = 'https://github.com/codegridweb/Minimal-Portfolio-Website'>here</a></p>
             </div>
-            <!--------------- hero section ends here --------------->
-
-            <!-- <div class="whitespace"></div> -->
-
-            <!--------------- form section starts here --------------->
-            <div class="container-fluid">
-                  <div class="row">
-                        <div class="col-lg-8">
-                              <form name="contact-form" id="contact-form" method="POST" action="https://formsubmit.co/44f9e620222625fc83c8ebb4bca595e0@outlook.com">
-
-                              <ul>
-
-                              <li class="wow fadeInUp" data-wow-delay="1.4s">
-                                    <label for="contact-name">Name :</label>
-                                    <div class="textarea">
-                                          <input type="text" name="contact-name" id="contact-name" value="" required>
-                                    </div>
-                              </li>
-
-                              <li class="wow fadeInUp" data-wow-delay="1.6s">
-                                    <label for="contact-email">Email :</label>
-                                    <div class="textarea">
-                                          <input type="email" name="contact-email" id="contact-email" value="" required>
-                                    </div>
-                              </li>
-
-                              <li class="wow fadeInUp" data-wow-delay="1.6s">
-                                    <label for="contact-project">Message :</label>
-                                    <div class="textarea">
-                                          <textarea type="email" name="contact-project" id="contact-project" rows="6" value="" required>
-                                          </textarea>
-                                    </div>
-                              </li>
-
-                              </ul>
-
-                              <button type="submit" name="contact-submit" id="contact-submit" class="send wow fadeInUp">Send Message</button>
-
-                              </form>
-                        </div>
-                  </div>
-            </div>
-
-            <!--------------- form section ends here --------------->
-
-            <div class="whitespace"></div>
-
-            <!--------------- footer starts here --------------->
-            <div class="footer">
-                  <div class="container">
-                        <br><br>
-
-                        <div class="collab">
-                              <div class="row">
-                                    <div class="col-lg-12">
-                                          <p class="wow fadeInUp">Interested in knowing more? Contact me.</p>
-                                    </div>
-                              </div>
-                        </div>
-
-                        <br>
-
-                        <div class="hr">
-                              <div class="row"></div>
-                        </div>
-
-                        <br><br>
-
-                        <div class="info">
-                              <div class="row">
-
-                                    <div class="col-lg-4" id="media">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                                          <ul>
-                                                <li id="ln" class="wow fadeInUp" data-wow-delay="0.8s"><a href = "https://www.linkedin.com/in/dhruv-akshay-pandit/" target="_blank" rel="noopener">ln</a></li>
-                                                <li id="ig" class="wow fadeInUp" data-wow-delay="1s"><a href = "https://www.instagram.com/dopepandit/" target="_blank" rel="noopener">ig</a></li>
-                                          </ul>
-
-                                          <br><br>
-                                    </div>
-
-                                    <div class="col-lg-4" id="address">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">connect</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">dhruv.pandit2001@outlook.com</h4>
-                                          <br><br>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </div>
-            <!--------------- footer ends here --------------->
-
-            <br><br><br><br>
-
-      </div>
-
-      <!-- greensock cdn -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-      <script type="text/javascript">
-
-      // navigation starts here
-      $("#toggle").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      $("#resize ul li a").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      $(".close-btn").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      // navigation ends here
-
-      // nav animation
-
-      TweenMax.from("#brand", 1, {
-            delay: 0.4,
-            y: 10,
-            opacity: 0,
-            ease: Expo.easeInOut
-      })
-
-      TweenMax.staggerFrom("#menu li a", 1, {
-            delay: 0.4,
-            opacity: 0,
-            ease: Expo.easeInOut
-      }, 0.1);
-
-      // nav animation ends
-
-
-      new WOW().init();
-
-
-      </script>
+        </footer>
+    </div>
 </body>
 </html>
