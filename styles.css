@@ -7,16 +7,24 @@ font-size: 25px;
 }
 
 #menu {
+animation-name: fade-in-up;
+opacity: 0;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-delay: 0.5s;
 display: flex;
 flex-direction: row-reverse;
 list-style: none;
+
 
 }
 
 #menu li {
 padding: 18px;
+
 }
 #menu li a {
+    
 text-decoration: none;
 color: rgb(224, 224, 224);
 transition: color .3s ease-in-out;
@@ -34,12 +42,17 @@ order: -1;
 }
 
 #brand a {
+opacity: 0;
 text-decoration: none;
 color: rgb(241, 241, 241);
 font-family: Futura;
 transition: color .3s ease-in-out;
 font-size: 28px;
 margin-left: 10px;
+animation-name: fade-in-up;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-delay: 0;
 }
 #brand a:hover {
 color: white;
@@ -50,16 +63,28 @@ display: flex; /* makes the div a row element */
 
 /* specify height and width of the row */
 .row1, .row2, .row3 {
-width: 100%;
-align-items: center;
-max-height: 45%;
+width: 1920;
+max-height: 450px;
 margin-top: 10%;
 margin-bottom: 10%;
-overflow: auto;
+opacity: 0;
 animation-name: fade-in-up;
-animation-duration: 1s;
+animation-duration: 2s;
+animation-fill-mode: forwards;
 
 }
+.content .row1 {
+    animation-delay: 1.0s;
+  }
+  
+  .content .row2 {
+    animation-delay: 1.5s;
+  }
+  
+  .content .row3 {
+    animation-delay: 2.0s;
+  }
+
 
 
 /* split the row into two columns */
@@ -77,7 +102,7 @@ max-height: 100%;
 
 
 }
-.col-2 p {
+.content .col-2 p {
 font-size: 25px;
 font-family: Roboto;
 color: #e8e4e4;
@@ -93,7 +118,7 @@ max-width: 100%;
 max-height: 100%; 
 
 }
-.col-1 p {
+.content .col-1 p {
 font-size: 25px;
 font-family: Roboto;
 color: #e8e4e4;
@@ -208,6 +233,8 @@ justify-content: flex-end; /* and align items to the right */
 display: inline-block;
 overflow: hidden; 
 animation: typing 2.5s steps(30, end), blink-caret .5s step-end infinite;
+animation-fill-mode: forwards;
+animation-delay: 0.7s;
 white-space: nowrap;
 font-size: 24px;
 font-weight: 300;
@@ -227,6 +254,9 @@ from, to { border-color: transparent }
 .title {
 opacity: 0;
 animation: fade-in-up 1.5s ease-out forwards;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-delay: 0.7s;
 }
 .footer-line {
     width: 100%; /* adjust the value to change the width */
@@ -244,9 +274,7 @@ to {
 
 }
 /* Header styling */
-.row1 ~.row1 ~ .row3 {
-    animation-delay: 1s;
-}
+
 
 .content h1{
     font-size: 28px;
@@ -256,4 +284,27 @@ to {
     animation: fade-in-up 1.5s ease-out forwards;
     text-align: center;
 
+}
+.content-about h1{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color:#e7e7e7 ;
+    animation: fade-in-up 1.5s ease-out forwards;
+    text-align: center;
+
+}
+.content-about .row1 {
+    width: 90% !important; 
+    height: 800px !important;
+}
+.content-about .col-2 img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+.content-about .col-1 {
+    font-size: 20px;
+    font-family: Roboto;
+    color: #e8e4e4;
+    line-height: 200%;
 }
