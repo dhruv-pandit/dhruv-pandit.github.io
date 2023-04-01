@@ -156,14 +156,21 @@ body {
 footer {
     font-family: 'Roboto';
     text-align: right;
+    padding: 5px 0;
 }
 
 .footer-line {
     border-color: grey;
+    width: 300px; /* adjust the value to change the width */
+    height: .1px;
+    background-color: #ddd;
+    margin: 15px auto;
+    float: right;
 }
 
+
 .footer-text p {
-    margin: 0;
+    margin: 5px 0;
 }
 
 .interested {
@@ -171,6 +178,7 @@ footer {
 }
 .contactme {
     color: rgb(231, 231, 231);
+    clear: both;
 }
 
 .github-link {
@@ -258,12 +266,7 @@ animation-duration: 1s;
 animation-fill-mode: forwards;
 animation-delay: 0.7s;
 }
-.footer-line {
-    width: 100%; /* adjust the value to change the width */
-    height: .1px;
-    background-color: #ddd;
-    margin: 20px auto;
-    }
+
 @keyframes fade-in-up {
 from {
     opacity: 0;
@@ -289,22 +292,57 @@ to {
     font-size: 28px;
     font-weight: 400;
     font-family: 'Roboto';
-    color:#e7e7e7 ;
+    color:#92ffbf ;
     animation: fade-in-up 1.5s ease-out forwards;
     text-align: center;
 
 }
 .content-about .row1 {
-    width: 90% !important; 
+    width: 100% !important; 
     height: 800px !important;
 }
-.content-about .col-2 img {
-    max-width: 100% !important;
-    max-height: 100% !important;
-}
-.content-about .col-1 {
+.row1 p {
     font-size: 20px;
-    font-family: Roboto;
-    color: #e8e4e4;
-    line-height: 200%;
+    color: rgb(157, 157, 157);
+    font-family: Roboto, sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 2.5;
 }
+.row1 p {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .row1 p:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .row1 p:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .row1 p:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .row1 p:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .row1 p:nth-child(5) {
+    animation-delay: 1s;
+  }
+
+    
