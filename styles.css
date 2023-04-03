@@ -491,16 +491,20 @@ body {
 
 .content-contact h1 {
   position: relative;
-  margin: 100px 0 25px 0;
+  margin: 0 25px 0;
   font-size: 2.3em;
   text-align: center;
   letter-spacing: 7px;
+  animation: fade-in-up 1.5s ease-out forwards;
+
 }
 
 #form {
   position: relative;
   width: 500px;
   margin: 50px auto 100px auto;
+  animation: fade-in-up 1.5s ease-out forwards;
+
 }
 
 input {
