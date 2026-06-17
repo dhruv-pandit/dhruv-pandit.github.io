@@ -34,6 +34,16 @@ div.highlighter-rouge, figure.highlight {
   }
 }
 
+div.highlighter-rouge.citation-code,
+figure.highlight.citation-code,
+.citation-code .highlight,
+.citation-code pre,
+.citation-code code,
+code.citation-code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 

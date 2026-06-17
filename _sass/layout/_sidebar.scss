@@ -245,6 +245,15 @@
 
   li {
     white-space: nowrap;
+
+    @include breakpoint($large) {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 5px;
+      line-height: 1.4;
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
   }
 
   a {
@@ -259,6 +268,19 @@
 
     &:hover {
       text-decoration: underline;
+    }
+
+    @include breakpoint($large) {
+      display: flex;
+      align-items: flex-start;
+      min-width: 0;
+    }
+  }
+
+  i {
+    @include breakpoint($large) {
+      flex: 0 0 auto;
+      margin-top: 0.15em;
     }
   }
 }

@@ -9,56 +9,59 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<div class="cv-pdf-viewer" data-pdf-url="{{ base_path }}/files/CV_DAP.pdf">
+  <div class="cv-pdf-toolbar">
+    <button type="button" data-zoom-out>-</button>
+    <span data-page-count>Loading CV...</span>
+    <button type="button" data-zoom-in>+</button>
+  </div>
+  <div class="cv-pdf-pages" aria-label="Embedded CV PDF"></div>
+</div>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+<script type="module">
+  import * as pdfjsLib from "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.mjs";
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.mjs";
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  const viewer = document.querySelector(".cv-pdf-viewer");
+  const pages = viewer.querySelector(".cv-pdf-pages");
+  const pageCount = viewer.querySelector("[data-page-count]");
+  const zoomIn = viewer.querySelector("[data-zoom-in]");
+  const zoomOut = viewer.querySelector("[data-zoom-out]");
+  let pdf;
+  let scale = 1.25;
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  async function renderPdf() {
+    pages.innerHTML = "";
+    pageCount.textContent = `Rendering ${pdf.numPages} pages`;
+
+    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
+      const page = await pdf.getPage(pageNumber);
+      const viewport = page.getViewport({ scale });
+      const canvas = document.createElement("canvas");
+      const context = canvas.getContext("2d");
+
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      canvas.setAttribute("aria-label", `CV page ${pageNumber}`);
+
+      pages.appendChild(canvas);
+      await page.render({ canvasContext: context, viewport }).promise;
+    }
+
+    pageCount.textContent = `${pdf.numPages} pages`;
+  }
+
+  pdf = await pdfjsLib.getDocument(viewer.dataset.pdfUrl).promise;
+  await renderPdf();
+
+  zoomIn.addEventListener("click", async () => {
+    scale = Math.min(scale + 0.15, 2);
+    await renderPdf();
+  });
+
+  zoomOut.addEventListener("click", async () => {
+    scale = Math.max(scale - 0.15, 0.75);
+    await renderPdf();
+  });
+</script>
