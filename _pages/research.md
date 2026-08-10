@@ -9,23 +9,21 @@ You can also find my articles on [my Google Scholar profile]({{ site.author.goog
 
 ## Journal Articles
 
-
-## Working Papers
-
-
 <div class="research-entry" markdown="1">
 
-### [The Regional Economic Impact of Weather Shocks: Evidence from Portugal](/research/weather-shocks-portugal/)
+### [The regional economic impact of weather shocks: Evidence from Portugal](/research/weather-shocks-portugal/)
 
-Under final revision at the *Journal of Environmental Economics and Management* (JEEM).
+Dhruv Akshay Pandit, Paulo M. M. Rodrigues, João Seixo
 {: .research-entry__meta}
 
-*Suggested citation:* Pandit, D. A., Rodrigues, P. M., & Seixo, J. (2025). The Regional Economic Impact of Weather Shocks: Evidence from Portugal. Banco de Portugal, Economics and Research Department.
+*Suggested citation:* Pandit, Dhruv Akshay, Paulo M. M. Rodrigues, and João Seixo. "The Regional Economic Impact of Weather Shocks: Evidence from Portugal." *Journal of Environmental Economics and Management* 140 (September 2026): 103409. [https://doi.org/10.1016/j.jeem.2026.103409](https://doi.org/10.1016/j.jeem.2026.103409).
 {: .research-entry__citation}
 
-[Working paper link](https://www.bportugal.pt/paper/regional-economic-impact-weather-shocks-evidence-portugal){: .btn}
+[Journal article link](https://www.sciencedirect.com/science/article/pii/S0095069626001294){: .btn}
 
 </div>
+
+## Working Papers
 
 <div class="research-entry" markdown="1">
 
@@ -41,14 +39,23 @@ Under review at *Nature Humanities and Social Sciences Communications*.
 
 </div>
 
-## Conference Papers
+<div class="research-entry" markdown="1">
 
 ### [The impacts of weather anomalies on international tourism demand](/research/weather-anomalies-tourism-demand/)
 
-<p class="research-entry__meta">To be presented at <a href="https://climateaau.github.io/emcc-x">Econometric Models of Climate Change (ECMM-X) 2026</a>, Denmark.</p>
+Banco de Portugal Economic Studies.
+{: .research-entry__meta}
+
+*Suggested citation:* Pandit, D. A., Neto, M. D. C., & Rodrigues, P. M. M. (2026). The impacts of weather anomalies on international tourism demand. Banco de Portugal Economic Studies, 12(3), 81-105. https://www.bportugal.pt/sites/default/files/documents/2026-07/RE202611_EN.pdf
+{: .research-entry__citation}
+
+[Working paper link](https://www.bportugal.pt/en/paper/impacts-weather-anomalies-international-tourism-demand){: .btn}
+
+</div>
+
+## Conference Papers
 
 ## Work in Progress
-
 
 ### The effects of weather anomalies on severe traffic accidents
 

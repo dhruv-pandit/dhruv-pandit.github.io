@@ -1,31 +1,31 @@
 ---
-title: "The regional economic impact of weather shocks: evidence from Portugal"
+title: "The regional economic impact of weather shocks: Evidence from Portugal"
 collection: publications
-category: working_papers
+category: manuscripts
 permalink: /research/weather-shocks-portugal/
 author_profile: true
 comments: false
-link: "https://www.bportugal.pt/paper/regional-economic-impact-weather-shocks-evidence-portugal"
+link: "https://www.sciencedirect.com/science/article/pii/S0095069626001294"
 ---
 
-Status: Under revision at the *Journal of Environmental Economics and Management* (JEEM).
+Authors: Dhruv Akshay Pandit, Paulo M. M. Rodrigues, João Seixo
+
+Published in *Journal of Environmental Economics and Management*, 140, 103409.
 
 ## Abstract
 
-
-Weather extremes play an important role in shaping short-run economic activity, yet the literature offers little evidence on how weather shocks translate into household spending. This study examines the short-term economic impacts of temperature, wildfire risk, and a novel measure of rainfall volatility on point-of sales purchases, unemployment, and housing prices using a panel of Portuguese municipalities from 2010 to 2021. A panel vector autoregressive model with exogenous variables including cross-border spillovers from similar climate regimes using climate factors as controls is used. Panel local projections show that a one-standard-deviation increase in hourly rainfall volatility raises purchases and house-price growth, and lowers unemployment. Increases in mean temperature boost spending, whereas temperature variability dampens it, and wildfire risk reduces consumption. Introducing disposable income, non-linear terms, longer lags, or event-count weather indicators leaves these elasticities virtually unchanged. Regional analyses reveal that responses in the Lisbon Metropolitan Area and Algarve (southern Portugal) are not only larger but sometimes opposite in direction compared to those in northern Portugal. To the best of our knowledge, the findings provide the first evidence of weather-induced fluctuations in purchases within an European setting, offering guidance for adaptation policies and risk management.
+Weather extremes shape short-run economic activity through both market and nonmarket channels, yet evidence on local consumer-side activity remains limited. Using a municipality-level panel of Portuguese data (2010-2021), we estimate panel VAR and local-projection responses to weather shocks of point-of-sale purchases (a measure of merchant-location transaction activity, not resident household consumption), together with unemployment and house prices. Our central methodological finding is that hourly rather than daily measurement of rainfall variability raises the estimated semi-elasticities by an order of magnitude, suggesting that the existing climate-economy literature systematically understates the importance of high-intensity rainfall. Substantively, the local-projection responses indicate that hourly rainfall volatility raises purchases on impact and reverses the following quarter, consistent with intertemporal reallocation; temperature variability generates a sharp positive impact effect followed by a contraction; and high fire-danger days raise contemporaneous purchases. Unemployment and house prices follow the same patterns more weakly. Regional heterogeneity is substantial, the Lisbon Metropolitan Area and the Algarve sometimes display effects opposite in sign to those in the North.
 
 ### JEL Codes
-______
 
-- C33 - Models with Panel Data
-- C53 - Forecasting and Other Model Applications
-- E31 - Price Level; Inflation; Deflation
+- Q54
+- R11
+- R12
+- C33
 
 ### Suggested Citation
-________
 
 ```text
-Pandit, D. A., Rodrigues, P. M., & Seixo, J. (2025). The Regional Economic Impact of Weather Shocks: Evidence from Portugal. Banco de Portugal, Economics and Research Department.
+Pandit, Dhruv Akshay, Paulo M. M. Rodrigues, and João Seixo. "The Regional Economic Impact of Weather Shocks: Evidence from Portugal." Journal of Environmental Economics and Management 140 (September 2026): 103409. https://doi.org/10.1016/j.jeem.2026.103409.
 ```
 {: .citation-code}
