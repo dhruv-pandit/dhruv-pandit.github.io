@@ -55,6 +55,15 @@ Banco de Portugal Economic Studies.
 
 ## Conference Papers
 
+<div class="research-entry" markdown="1">
+
+### [The impacts of weather anomalies on international tourism demand](/research/weather-anomalies-tourism-demand/)
+
+Presented at [Econometric Models of Climate Change (ECMM-X) 2026](https://climateaau.github.io/emcc-x), Denmark.
+{: .research-entry__meta}
+
+</div>
+
 ## Work in Progress
 
 ### The effects of weather anomalies on severe traffic accidents
