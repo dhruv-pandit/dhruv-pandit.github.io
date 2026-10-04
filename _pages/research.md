@@ -53,6 +53,20 @@ Banco de Portugal Economic Studies.
 
 </div>
 
+<div class="research-entry" markdown="1">
+
+### [Temperature anomalies, rainfall duration and road accidents: a nationwide analysis in Portugal](/research/temperature-anomalies-road-accidents/)
+
+Under review at *Transportation Research Part D*.
+{: .research-entry__meta}
+
+*Suggested citation:* Pandit, Dhruv Akshay and de Castro Neto, Miguel and Marques Rodrigues, Paulo Manuel, Temperature anomalies, rainfall duration and road accidents: a nationwide analysis in Portugal. Available at SSRN: https://ssrn.com/abstract=7550196 or http://dx.doi.org/10.2139/ssrn.7550196
+{: .research-entry__citation}
+
+[SSRN preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7550196){: .btn}
+
+</div>
+
 ## Conference Papers
 
 <div class="research-entry" markdown="1">
@@ -65,7 +79,3 @@ Presented at [Econometric Models of Climate Change (ECMM-X) 2026](https://climat
 </div>
 
 ## Work in Progress
-
-### The effects of weather anomalies on severe traffic accidents
-
-<small>Dhruv Akshay Pandit, Miguel de Castro Neto, Paulo M.M Rodrigues et al.</small>
